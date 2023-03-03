@@ -105,3 +105,50 @@ Tasks:
 ```
 
 In this schema, the `Customer` collection stores information about the customers, including their `name`, `email`, and `address`. Each customer has a cart and can have one or many orders. The `Cart` collection stores the items that a customer has added to their `cart`, including the product ID and quantity. The `Product` collection stores information about the products, including the `name`, `description`, `price`, and `image URL`. The `Order` collection stores information about the orders, including the customer ID, items, total price, status, and creation date.
+
+
+## API End points
+### Products
+**`GET /api/products`**: Get a list of all products
+
+**`GET /api/products/:id`**: Get a specific product by ID
+
+**`POST /api/products`**: Create a new product
+
+**`PUT /api/products/:id`**: Update a specific product by ID
+
+**`DELETE /api/products/:id`**: Delete a specific product by ID
+
+### Customers
+
+**`GET /api/customers`**: Get a list of all customers
+
+**`GET /api/customers/:id`**: Get a specific customer by ID
+
+**`POST /api/customers`**: Create a new customer
+
+**`PUT /api/customers/:id`**: Update a specific customer by ID
+
+**`DELETE /api/customers/:id`**: Delete a specific customer by ID
+
+### Carts
+
+**`GET /api/carts/:id`**: Get the cart for a specific customer by customer ID
+
+**`POST /api/carts/:id/items`**: Add an item to the cart for a specific customer by customer ID
+
+**`PUT /api/carts/:id/items/:itemId`**: Update the quantity of an item in the cart for a specific customer by customer ID and item ID
+
+**`DELETE /api/carts/:id/items/:itemId`**: Remove an item from the cart for a specific customer by customer ID and item ID
+
+
+### Orders
+**`GET /api/orders`**: Get a list of all orders
+
+**`GET /api/orders/:id`**: Get a specific order by ID
+
+**`POST /api/orders`**: Create a new order
+
+**`PUT /api/orders/:id`**: Update a specific order by ID
+
+**`DELETE /api/orders/:id`**: Delete a specific order by ID
