@@ -24,6 +24,9 @@ Tasks:
 - The ability for shoppers to view the contents of their cart and adjust quantities
 - The ability for shoppers to place an order and receive confirmation.
 
+![Busola and Genius](https://user-images.githubusercontent.com/55829039/222960849-9fd10376-b89c-4c6b-8f96-6c9213954c39.png)
+
+
 ### Entities Needed
 - Products
 - Customers
